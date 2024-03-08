@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
-#if 1
+#if 0
 
 struct xy {
 	int x;
