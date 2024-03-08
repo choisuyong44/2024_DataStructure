@@ -3,35 +3,22 @@
 
 #if 1
 
-// person 구조체
-struct person {
-	char name[50];	// 문자 배열로 된 이름
-	int age;		// 사람의 나이를 나타내는 정수 값
-	float salary;	// 각 개인의 월급을 나타내는 실수 값
-
+struct xy {
+	int x;
+	int y;
 };
 
+
 int main() {
-	int a = 10;
+	struct xy case1;
+	
+	scanf("%d",&case1.x);
+	scanf("%d",&case1.y);
 
-	struct person person1;
-
-	// 정보 입력 -> 문자열은 주소, 정수나 실수, 캐릭터는 주소x -> & 사용해야함.
-	printf("이름 입력 : ");
-	scanf("%s", person1.name);
-
-	printf("나이 입력 : ");
-	scanf("%d", &person1.age);
-
-	printf("월급 입력 : ");
-	scanf("%f", &person1.salary);
-
-
-	printf("입력된 정보\n");
-	printf("이름 %s\n", person1.name);
-	printf("나이 %d\n", person1.age);
-	printf("월급 %f\n", person1.salary);
+	if (case1.x >= 0 && case1.y >= 0) printf("1");
+	else if (case1.x <= 0 && case1.y >= 0) printf("2");
+	else if (case1.x <= 0 && case1.y <= 0) printf("3");
+	else if (case1.x >= 0 && case1.y <= 0) printf("4");
 	return 0;
 }
-
-#endif
+# endif
