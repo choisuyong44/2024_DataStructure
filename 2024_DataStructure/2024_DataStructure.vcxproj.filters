@@ -27,5 +27,8 @@
     <ClCompile Include="1765.c">
       <Filter>소스 파일\01_practice</Filter>
     </ClCompile>
+    <ClCompile Include="1766.c">
+      <Filter>소스 파일\01_practice</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
