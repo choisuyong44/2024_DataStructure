@@ -19,6 +19,7 @@ int main() {
 	else if (case1.x <= 0 && case1.y >= 0) printf("2");
 	else if (case1.x <= 0 && case1.y <= 0) printf("3");
 	else if (case1.x >= 0 && case1.y <= 0) printf("4");
+	else if (case1.x == 0 && case1.y == 0) printf("0");
 	return 0;
 }
 # endif
